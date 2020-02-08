@@ -19,7 +19,7 @@ function WeatherEngine({ location }) {
 
   const getWeather = async q => {
     const apiRes = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=a62ccbd3d0187b46b8b021d77783f1e8`
+      `https://api.openweathermap.org/data/2.5/weather?q=${q}&units=metric&APPID=a62ccbd3d0187b46b8b021d77783f1e8`
     );
     const resJSON = await apiRes.json();
     // return resJSON;
